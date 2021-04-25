@@ -75,7 +75,7 @@ Save and escape.
 - *--cpus-per-task*: just one CPU core will be used.
 - *--mem*: Memory (RAM) for the job. Number followed by unit prefix (4G)
 
-**NB:** <Details about slurm parameters are available here: https://slurm.schedmd.com/sbatch.html
+**NB:** Details about slurm parameters are available here: https://slurm.schedmd.com/sbatch.html
 
 **nf-core/methyseq pipeline paramaters:**
 - *-profile*: specify the profile to download and use (example: profile *genotoul.config*)
@@ -117,6 +117,7 @@ MultiQC reports the percentage of bases removed by Cutadapt in the General Stati
 **Output directory:** *results/trim_galore*
 Contains FastQ files with quality and adapter trimmed reads for each sample, along with a log file describing the trimming.
 - *sample_val_1.fq.gz*, *sample_val_2.fq.gz* : Trimmed FastQ data, reads 1 and 2
+
 **NB:** Only saved if --save_trimmed has been specified.
 - *logs/sample_val_1.fq.gz_trimming_report.txt*: Trimming report (describes which parameters that were used)
 - *FastQC/sample_val_1_fastqc.zip*: FastQC report for trimmed reads
@@ -127,6 +128,7 @@ Bismark and bwa-meth convert all Cytosines contained within the sequenced reads 
 
 **Bismark output directory:** *results/bismark_alignments/*
 - *sample.bam*: Aligned reads in BAM format.
+
 **NB:** Only saved if --save_align_intermeds, --skip_deduplication or --rrbs is specified when running the pipeline.
 - *logs/sample_PE_report.txt*: Log file giving summary statistics about alignment.
 - *unmapped/unmapped_reads_1.fq.gz*, *unmapped/unmapped_reads_2.fq.gz*: Unmapped reads in FastQ format. Only saved if *--unmapped* specified when running the pipeline.
