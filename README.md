@@ -4,7 +4,7 @@
 
 The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with docker containers making installation trivial and results highly reproducible.
 
-[comment]: <All information about the *nf-core/methylseq pipeline* are available here: https://nf-co.re/methylseq/1.6>
+[comment]: <> (All information about the *nf-core/methylseq pipeline* are available here: https://nf-co.re/methylseq/1.6)
 
 ## 1. Create a work directory:
 
