@@ -1,4 +1,4 @@
-# User's guide of nf-core/methylSeq pipeline:"
+# User's guide of nf-core/methylSeq pipeline
 
 **nf-core/methylseq** is a bioinformatics analysis pipeline used for Methylation (Bisulfite) sequencing data. It pre-processes raw data from FastQ inputs, aligns the reads and performs extensive quality-control on the results.
 
